@@ -1,0 +1,162 @@
+@import '../../colors';
+
+.card-container2 {
+  margin: 8% auto 8% auto ;
+  height: 100%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  width: 70%;
+  background-color:  $White;
+  box-shadow: 0px 0px 10px $light-blue;
+  border-radius: 15px;
+}
+
+.card-center ,.card-title {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+}
+
+.card-container2 .btn {
+  margin-bottom: 3%;
+}
+
+.card-title{
+  color: $blue;
+  font-weight: bold;  
+  font-size: 35px;  
+  padding-bottom: 3%;
+  padding-top: 3%;
+}
+
+.card-container2 .card-body {
+  width: 100%;
+  margin: auto;
+  padding: auto;
+  padding-left: 25%;
+  margin-bottom: 5%;
+  padding-bottom: 5%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 20%;
+  justify-content: center;
+  grid-row-gap: 10%;
+  align-items: center; 
+  text-align: left; 
+}
+.card-body2 {
+  width: 100%;
+  margin: auto;
+  padding: auto;
+  padding-left: 25%;
+  margin-bottom: 5%;
+  padding-bottom: 5%;
+  padding-top: 8%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 20%;
+  justify-content: center;
+  grid-row-gap: 10%;
+  align-items: center; 
+  text-align: left; 
+}
+.text-label{
+  font-weight: bold;
+  font-size: 20px; 
+}
+
+.card-text  {
+  font-size: 20px; 
+}
+
+.card-container2 .btn{
+  margin-top: 2%;
+}
+
+.card-text-large {
+  text-align: center;
+  padding-top: 2%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  text-align: center;
+  font-size: 20px;
+  white-space: rap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 70%;
+  font-size: 20px;  
+}
+
+.linie-div {
+    padding-top: 2%;
+    margin: auto;
+    margin-top: 2%;
+    margin-bottom: 35px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    width: 70%;
+    height: 2px;
+    background-color: $light-blue;
+    box-shadow: 0px 0px 10px $light-blue;
+  }
+ 
+ 
+:root {
+  --circle-size: clamp(0.5rem, 5vw, 2rem);
+  --spacing: clamp(0.25rem, 5vw,0.5rem);
+}
+
+.timeline {
+  width: 100%;
+  margin: auto;
+  padding-bottom: 2%;
+
+}
+.c-stepper {
+  display: flex;
+}
+
+.c-stepper__item {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  text-align: center;
+
+  &:before {
+    --size: 3rem;
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: $light-gray;
+    background-color: $dark-blue;
+    opacity: 1;
+    margin: 0 auto 1rem;
+    color: $White;
+  }
+
+  &:not(:last-child) {
+    &:after {
+      content: "";
+      position: relative;
+      top: calc(var(--circle-size) / 2);
+      width: calc(100% - var(--circle-size) - calc(var(--spacing) * 2));
+      left: calc(50% + calc(var(--circle-size) / 2 + var(--spacing)));
+      height: 2px;
+      background-color: $dark-gray;
+      order: -1;
+    }
+  }
+}
+
+.c-stepper__title {
+  font-weight: bold;
+  font-size: 15px;
+  margin-bottom: 0.5rem;
+}

@@ -1,0 +1,116 @@
+@import '../../../colors';
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+     column-gap: 150px;
+     row-gap: 80px;
+     grid-auto-rows: 220px;   
+}
+
+.card {
+  position: relative;
+  border: 1px solid $gray;
+  padding: 20px;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $White;
+  border: none;
+  box-shadow: 0px 4px 10px  $light-blue;
+  border-radius: 15px;
+
+}
+  
+.title {
+    font-size: 35px;
+    text-align: center;
+    margin-top: 3px;
+    color: $dark-gray;
+  }
+
+.title2 {
+    text-align: center;
+    margin-top: 10px;
+    color: $light-black;
+  }
+  
+  .button-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .button {
+  font-weight: bold;
+  background-color: $dark-blue;
+  color: $White;
+  border: none;
+  padding: 8px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  flex: 1;
+  border-right: 0.5px solid $blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+  
+  .button:hover {
+    background-color: $blue;
+    text-decoration: none;
+    color: $White;
+  }
+  
+  .button:last-child {
+    margin-right: 0;
+    border-right: none;
+    border-bottom-right-radius: 15px; 
+  }
+
+  .button:first-child {
+    border-bottom-left-radius: 15px;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .card {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .card-container {
+    margin: 150px 250px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 150px;
+    row-gap: 80px;
+    grid-auto-rows: 220px;
+  }
+
+  @media screen and (max-width: 1300px) {
+    .card-container {
+      grid-template-columns: repeat(1, 1fr);
+      column-gap: 100px;
+      row-gap: 50px;
+      grid-auto-rows: 200px;
+      margin: 70px;
+    }
+  }
+
+  .description {
+   
+    color: $light-black;
+    max-height: 60px; 
+    overflow-y: auto; 
+    padding: 0 3% 3% 3%; 
+    text-align: center;
+  }

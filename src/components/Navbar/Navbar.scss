@@ -1,0 +1,55 @@
+@import '../../colors';
+
+
+.alert {
+    z-index: 2;
+    margin-top: 60px;
+    width: 100%;
+    text-align: center;
+    background-color: $light-pink;
+}
+
+.navbar {
+    height: 60px;
+    width: 100%;
+    background-color: $light-black;
+    margin: 0 auto;
+    text-align: center;
+    justify-content:center; 
+    position: fixed;
+    top: 0;
+    z-index: 3;
+}
+
+.navbar .links li {
+    display: flex;
+    align-items: center;
+    list-style: none;
+  }
+
+.link { 
+    color: $White;
+    font-size: 1.2rem;
+    font-weight: bold;  
+}
+
+.link:hover {
+    color: $light-blue;
+    text-decoration: none;
+}
+
+.navbar .links {
+    display: flex;
+    gap: 5rem;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0 1rem; 
+}
+
+.navbar .toggle_btn {
+    color: $black;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}

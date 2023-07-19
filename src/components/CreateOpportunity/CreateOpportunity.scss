@@ -1,0 +1,185 @@
+@import '../../colors';
+
+.create-container {
+    margin:5% 15%; 
+    padding-top: 2% ;  
+  
+}
+
+.create-form {
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     column-gap: 0px;
+     row-gap: 30px;
+     justify-content: center;
+     align-items: center; 
+     justify-items: center;       
+}
+
+.create-form2 {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   column-gap: 0px;
+   row-gap: 30px;
+   justify-content: center;
+   align-items: center; 
+   justify-items: center;  
+   padding:0px 100px ;  
+}
+
+
+.create-container .title{
+   font-weight: bold;
+   font-size: 30px;
+   text-align: center;
+   color: $light-blue;
+   font-weight: bold;
+   padding-bottom: 20px;
+   grid-column: 1 / -1; 
+  
+}
+
+.phase-name {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding-top: 2%;
+  grid-column: 1 / -1;
+}
+
+.create-container .Area-form , .select, .Button-form  {
+    width: 100%;
+    text-align: center;
+    grid-column: 1 / -1; 
+    margin: 0 auto;
+ }
+ .create-container .Button-form {
+  padding-top: 2%;
+  width: 90%;
+}
+
+ .create-container .select  {
+    background-color: $light-gray;
+    outline: none;
+    border-radius: 0.5rem;
+    border: 2px solid $light-gray;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+.select-role  {
+  background-color: rgb(224, 224, 224);
+  outline: none;
+  border-radius: 0.5rem;
+  border: 2px solid rgb(196, 196, 196);
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  width: 80%;
+  height: 50px;
+  text-align: center;
+}
+
+.create-container .select:focus {
+    border-color: $light-blue;
+}
+
+
+@media (max-width: 767px) {
+    .create-container {
+      margin: 5% 5%;
+    }
+    
+    .create-form {
+      grid-template-columns: 1fr;
+      justify-items: center;
+      align-items: center;
+      row-gap: 10px;
+    }
+    
+    .create-container .title {
+      font-size: 24px;
+    }
+    
+    .create-container .Area-form, .select, .Button-form {
+      width: 100%;
+    }
+  }
+
+  .btn {
+    background-color: $blue;
+    color: $White;
+    font-weight: bold;
+    font-size:80%;
+    height: 30px;
+    width: 120px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+  }
+
+  .btn:hover {
+    background-color: $dark-blue;
+  }
+
+  
+  @media (min-width: 768px) {
+    .create-container {
+      margin: 3% 15%;
+    }
+    
+    .create-form {
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 0px;
+      row-gap: 20px;
+      justify-content: center;
+      align-items: center;
+      justify-items: center;
+      padding-top: 2%;
+    }
+    
+    .create-container .title {
+      font-size: 20px;
+    }
+    
+    .create-container .Area-form, .select, .Button-form {
+      width: 90%;
+    }
+  }
+  
+  .create-container .title {
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    color: $blue;
+    font-weight: bold;
+    padding-top: 10px ;
+    padding-bottom: 40px;
+    grid-column: 1 / -1;
+  }
+  
+  .create-container .Area-form, .select, .Button-form , .phase {
+    text-align: center;
+    padding-bottom: 40px;
+    grid-column: 1 / -1;
+  }
+  
+  .create-container .select , .phase  {
+    background-color: $light-gray;
+    outline: none;
+    border-radius: 0.5rem;
+    border: 2px solid $gray;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+  }
+  .phase {
+    width: 100%;
+  }
+  .create-container .select:focus {
+    border-color: $blue;
+  }
+  

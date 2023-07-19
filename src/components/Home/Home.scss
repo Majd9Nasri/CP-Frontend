@@ -1,0 +1,104 @@
+@import '../../colors';
+
+.home-container { 
+    margin-top: 90px;
+}
+
+.form__group {
+  position: relative;
+  padding: 20px 0 0;
+  margin-top: 20px;
+  width: 20%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form__field {
+  font-family: inherit;
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid $dark-gray;
+  outline: 0;
+  font-size: 1.3rem;
+  color: $black;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+
+  &::placeholder {
+    color: transparent;
+  }
+
+  &:placeholder-shown ~ .form__label {
+    font-size: 1.3rem;
+    cursor: text;
+    top: 20px;
+  }
+}
+
+.form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: $gray;
+}
+
+.form__field:focus {
+  ~ .form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: $dark-blue;
+    font-weight:700;   
+    background: none; 
+  }
+  padding-bottom: 6px;  
+  font-weight: 700;
+  border-width: 3px;
+  border-image: linear-gradient(to right, $dark-blue, $light-blue);
+  border-image-slice: 1;
+}
+
+.form__field{
+  &:required,&:invalid { box-shadow:none; }
+}
+
+.isLoading{
+  text-align: center;
+  font-size: 25px;
+  padding-top: 20px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: $light-gray;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $dark-blue;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: $light-blue;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px $light-gray;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background:  $dark-blue;
+  border-radius: 10px;
+}
